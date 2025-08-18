@@ -1,7 +1,7 @@
 # 📘 Machine Learning Roadmap (12-Month Plan)
 
-This is a structured week-by-week ML learning plan with checklists.  
-Goal: Go from fundamentals → advanced ML → research-level understanding.  
+This is a structured week-by-week ML learning plan with checklists.
+Goal: Go from fundamentals → advanced ML → research-level understanding.
 Track progress by checking off tasks as you complete them ✅.
 
 ---
@@ -10,8 +10,8 @@ Track progress by checking off tasks as you complete them ✅.
 
 ### **Week 1: Python Basics for ML**
 
-- [ ] Review Python fundamentals (functions, classes, list comprehensions).
-- [ ] Learn NumPy basics: arrays, broadcasting, matrix multiplication.
+- [x] Review Python fundamentals (functions, classes, list comprehensions).
+- [x] Learn NumPy basics: arrays, broadcasting, matrix multiplication.
 - [ ] Learn Pandas basics: DataFrames, indexing, filtering, groupby.
 - [ ] Mini-project: Load the **Iris dataset** → clean, analyze, visualize.
 

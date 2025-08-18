@@ -1,6 +1,6 @@
 # 🗓️ Weekly Log
 
-Use this file to track your weekly progress, reflections, and blockers.  
+Use this file to track your weekly progress, reflections, and blockers.
 Update every weekend to stay consistent.
 
 ---
