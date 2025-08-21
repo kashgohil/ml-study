@@ -177,5 +177,52 @@ E<sub>32</sub> = |  0  1  0 |
 now we can write:
 
 ```
-(E<sub>32</sub>(E<sub>21</sub>A)) = REF(A)
+((E_32)((E_21)A)) = REF(A)
+```
+
+We can call REF(A) = u where u is upper triangular matrix.
+
+so,
+
+```
+((E_32)((E_21)A)) = u
+```
+
+now, we have E<sub>21</sub> and E<sub>32</sub>, we should be multiply those two, to get one single matrix that can be used to transform A into u. Let's call this matrix E.
+
+so,
+
+```
+EA = u
+```
+
+here E = E<sub>32</sub>E<sub>21</sub>.
+
+to generalize this, we can write:
+
+E = Multiplication of each Pivot's Elementary matrix.
+
+Order matters so assumming all the rows have a pivot, we can write:
+
+E = E<sub>n-1,n-2</sub>E<sub>n-2,n-3</sub>...E<sub>21</sub>
+
+- There is also another type of Elementary Matrix, which is called the Elementary Permutation Matrix. This matrix is used to swap two rows of a matrix. For example, if we want to swap row 1 and row 2 of a matrix A, we can use the following Elementary Permutation Matrix:
+
+```
+                 |  0  1  0 |
+P<sub>12</sub> = |  1  0  0 |
+                 |  0  0  1 |
+```
+
+This is pretty helpful when we want to swap rows of matrix to make it compatible for REF.
+
+#### ***Side Note***:
+- when you want to work with rows of a given matrix A, you should multiply the Elementary matrix on the left side of the matrix A.
+- when you want to work with columns of a given matrix A, you should multiply the Elementary matrix on the right side of the matrix A.
+
+Okay, so back to Elementary Matrix E. We want to find the E for which we can get our REF(A)/u.
+If we do the trick where we Multiply all the Elementary matrices together, we can get the Elementary matrix E that can be used to transform A into u. but that is tedious task to do that many matrix multiplication. Instead, we can use the concept of Inverse Matrix to find the Elementary matrix E.
+
+```
+EA = u
 ```
